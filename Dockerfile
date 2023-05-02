@@ -12,7 +12,7 @@ RUN npm ci
 COPY . .
 
 # Expose port
-EXPOSE 3000
+EXPOSE 3000:3000
 
 # Start the app
 CMD ["node", "server.js"]
