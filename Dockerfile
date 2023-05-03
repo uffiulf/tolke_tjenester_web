@@ -9,7 +9,8 @@ COPY package*.json ./
 RUN npm ci
 
 # Bundle app source
-COPY . .
+COPY . . 
+
 
 # Expose port
 EXPOSE 3000:3000
