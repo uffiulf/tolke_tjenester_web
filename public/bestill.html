@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestillingsskjema - Tolk Margrit AS</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="Tjenester.html">Tjenester</a></li>
+              <li><a href="om-oss.html">Om Oss</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+          <h1>Tolk Margrit AS</h1>
+      <!-- navigasjonsmeny her -->
+    </header>
+    <main>
+      <section class="booking">
+        <h2>Bestillingskalender</h2>
+        <form action="handle_booking.php" method="POST">
+          <div class="form-group">
+            <label for="name">Navn</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-post</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="date">Velg dato</label>
+            <input type="date" class="form-control" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Velg tidspunkt</label>
+            <input type="time" class="form-control" id="time" name="time" required>
+          </div>
+          <br>
+                      
+          <button type="submit" class="btn btn-primary">Bestill nå</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <!-- fotterkoden her -->
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
