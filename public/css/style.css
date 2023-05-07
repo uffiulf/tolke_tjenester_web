@@ -182,3 +182,6 @@ body {
   background-color: #cec5df;
 }
 
+html, body {
+  height: 100%;
+}
