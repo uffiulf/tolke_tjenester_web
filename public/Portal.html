@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal - Tolk Margrit AS</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public\css\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/public/index.html">Hjem</a></li>
+                <li><a href="/public/tjenester/Tjenester.html">Tjenester</a></li>
+                <li><a href="/public/om-oss.html">Om Oss</a></li>
+                <li><a href="/public/kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+          <h1>Tolk Margrit AS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Privat innlogging</h2>
+            <div class="login-container">
+              <form action="handle_login.php" method="POST">
+                <label for="privat_email" class="input-label">E-post:</label>
+                <input type="email" id="privat_email" name="privat_email" required />
+                <br />
+                <label for="privat_passord" class="input-label">Passord:</label>
+                <input
+                  type="password"
+                  id="privat_passord"
+                  name="privat_passord"
+                  required
+                />
+                <br />
+                <input type="submit" value="Logg inn" class="submit-button" />
+              </form>
+              <div>
+                <p>Ikke registrert?</p>
+                <a href="register.html" class="register-button">Registrer deg</a>
+              </div>
+            </div>
+          </section>
+          
+
+      <section>
+        <h2>Bedriftsinnlogging</h2>
+        <div class="login-container">
+        <form action="handle_login.php" method="POST">
+            <label for="bedrift_email" class="input-label">E-post:</label>
+            <input
+            type="email"
+            id="bedrift_email"
+            name="bedrift_email"
+            required
+          />
+          <br />
+          <label for="bedrift_passord" class="input-label">Passord:</label>
+          <input
+            type="password"
+            id="bedrift_passord"
+            name="bedrift_passord"
+            required
+          />
+          <br />
+          <input type="submit" value="Logg inn" class="submit-button" />
+        </form>
+        <div>
+          <p>Ikke registrert?</p>
+          <a href="register.html" class="register-button">Registrer deg</a>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© Tolk Margrit AS 2023</p>
+    </footer>
+  </body>
+</html>
