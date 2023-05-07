@@ -23,64 +23,75 @@
           <h1>Tolk Margrit AS</h1>
     </header>
     <main>
+
+
+      
       <section style="margin-top: 50px;"></section>
-        <section>
-            <h2>Privat innlogging</h2>
+      <section>
+        <h2>Privat innlogging</h2>
+        <div class="login-container">
+          <form action="handle_login.php" method="POST">
+            <div class="input-container">
+              <label for="privat_email" class="input-label">E-post:</label>
+              <input type="email" id="privat_email" name="privat_email" required />
+              <br />
+              <label for="privat_passord" class="input-label">Passord:</label>
+              <input
+                type="password"
+                id="privat_passord"
+                name="privat_passord"
+                required
+              />
+            </div>
+            <div class="form-controls">
+              <input type="submit" value="Logg inn" class="submit-button" />
+            </div>
+          </form>
+          <div class="not-registered-container">
+            <div class="register-box">
+              <p class="not-registered">Ikke registrert?</p>
+              <a href="register.html" class="register-button">Registrer deg</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+          
+          <hr style="border-top: 5px solid #000; margin: 60px 0;">
+          <section style="margin-top: 50px;"></section>
+          <section>
+            <h2>Bedriftsinnlogging</h2>
             <div class="login-container">
               <form action="handle_login.php" method="POST">
-                <label for="privat_email" class="input-label">E-post:</label>
-                <input type="email" id="privat_email" name="privat_email" required />
-                <br />
-                <label for="privat_passord" class="input-label">Passord:</label>
-                <input
-                  type="password"
-                  id="privat_passord"
-                  name="privat_passord"
-                  required
-                />
-                <br />
-                <input type="submit" value="Logg inn" class="submit-button" />
+                <div class="input-container">
+                  <label for="bedrift_email" class="input-label">E-post:</label>
+                  <input type="email" id="bedrift_email" name="bedrift_email" required />
+                  <br />
+                  <label for="bedrift_passord" class="input-label">Passord:</label>
+                  <input
+                    type="password"
+                    id="bedrift_passord"
+                    name="bedrift_passord"
+                    required
+                  />
+                </div>
+                <div class="form-controls">
+                  <input type="submit" value="Logg inn" class="submit-button" />
+                </div>
               </form>
-              <div>
-                <p>Ikke registrert?</p>
-                <a href="register.html" class="register-button">Registrer deg</a>
+              <div class="not-registered-container">
+                <div class="register-box">
+                  <p class="not-registered">Ikke registrert?</p>
+                  <a href="register.html" class="register-button">Registrer deg</a>
+                </div>
               </div>
             </div>
           </section>
           
-          <hr style="border-top: 5px solid #000; margin: 60px 0;">
-          <section style="margin-top: 30px;">
-      <section>
-        <h2>Bedriftsinnlogging</h2>
-        <div class="login-container">
-        <form action="handle_login.php" method="POST">
-            <label for="bedrift_email" class="input-label">E-post:</label>
-            <input
-            type="email"
-            id="bedrift_email"
-            name="bedrift_email"
-            required
-          />
-          <br />
-          <label for="bedrift_passord" class="input-label">Passord:</label>
-          <input
-            type="password"
-            id="bedrift_passord"
-            name="bedrift_passord"
-            required
-          />
-          <br />
-          <input type="submit" value="Logg inn" class="submit-button"  />
-        </form>
-        <div>
-            
-          <p>Ikke registrert?</p>
-          <a href="register.html" class="register-button">Registrer deg</a>
           
-        </div>
-        </div>
-      </section>
-      
     </main>
     <footer>
       <p>© Tolk Margrit AS 2023</p>

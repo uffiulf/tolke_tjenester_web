@@ -237,30 +237,43 @@ section {
   text-decoration: none;
 }
 
+/* Rest of the existing CSS code */
+
 .input-label {
   display: inline-block;
   width: 80px;
   text-align: right;
   margin-right: 10px;
+  
 }
 
 input[type="email"],
 input[type="password"] {
   margin-bottom: 5px;
+  width: 300px;
 }
 
-.submit-button {
+.submit-button {     /* Logg inn knappen */
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+}
+
+input[type="submit"] {
+  background-color: rgb(102, 74, 182);
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: darkblue;
 }
 
 
-.login-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 
 hr {
@@ -270,3 +283,45 @@ hr {
   margin:  20px 0;
 
 }
+
+
+.form-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Legg til denne linjen for å lage litt plass mellom input felt og logg inn */
+}
+
+
+.not-registered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.not-registered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Legg til denne linjen for å midtstille horisontalt */
+  align-items: center; /* Legg til denne linjen for å midtstille vertikalt */
+}
+
+
+.register-box {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; /* Legg til denne linjen for å flytte boksen lenger ned */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
