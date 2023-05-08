@@ -6,6 +6,15 @@
     <title>Bestillingsskjema - Tolk Margrit AS</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    
+    
+    <link rel="stylesheet" href="/public/tui.calendar/tui.calendar-main/apps/calendar/dist/tui-calendar.min.css" />
+    <link rel="stylesheet" href="/public/tui.calendar/tui.date-picker-main/dist/tui-date-picker.min.css" />
+
+
+  
+   
+
   </head>
   <body>
     <header>
@@ -21,33 +30,58 @@
       <!-- navigasjonsmeny her -->
     </header>
     <main>
-      <section class="booking">
-        <h2>Bestillingskalender</h2>
-        <form action="handle_booking.php" method="POST">
-          <div class="form-group">
-            <label for="name">Navn</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-post</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="date">Velg dato</label>
-            <input type="date" class="form-control" id="date" name="date" required>
-          </div>
-          <div class="form-group">
-            <label for="time">Velg tidspunkt</label>
-            <input type="time" class="form-control" id="time" name="time" required>
-          </div>
-          <br>
-                      
-          <button type="submit" class="btn btn-primary">Bestill nå</button>
-        </form>
-      </section>
+
+
+
+
+      <section id="calendar"></section>
+
+
+
+
+
     </main>
     <footer>
-      <!-- fotterkoden her -->
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+          var calendar = new tui.Calendar(calendarEl, {
+            defaultView: 'week',
+            useCreationPopup: true,
+            useDetailPopup: true
+          });
+          calendar.createSchedules([
+            {
+              id: '1',
+              calendarId: '1',
+              title: 'Sample Event',
+              category: 'time',
+              dueDateClass: '',
+              start: '2023-05-10T22:30:00+09:00',
+              end: '2023-05-10T23:30:00+09:00'
+            }
+          ]);
+          calendar.on('beforeCreateSchedule', function(event) {
+            var schedule = {
+              id: generateId(),
+              calendarId: '1',
+              title: event.title,
+              category: 'time',
+              dueDateClass: '',
+              start: event.start,
+              end: event.end
+            };
+            calendar.createSchedules([schedule]);
+          });
+        });
+        function generateId() {
+          return Math.random().toString(36).substr(2, 11);
+        }
+      </script>
+      
+
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
