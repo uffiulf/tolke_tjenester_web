@@ -1,0 +1,327 @@
+/* Main Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #11243f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 24px;
+}
+
+nav ul li:first-of-type a {
+  margin-left: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  background-color: #1d3557;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #1d3557;
+}
+
+.services h3 {
+  font-size: 28px;
+  font-weight: 510;
+}
+
+.services ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services li {
+  margin-bottom: 30px;
+}
+
+.services li h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  padding: 50px 0;
+}
+
+.carousel img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel {
+  background-color: #626180;
+}
+
+.about h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.contact h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+.btn-primary {       /* send knappen */           
+  background-color: #1d3557;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: bold;
+  
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #1d3557;
+  
+}
+.cta-button {       /*bestill knappen */
+  background-color: #1d3557;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #1d3557;
+  border: 2px solid #1d3557;
+}
+
+.text-center {
+  text-align: center;
+}
+.services, .about, .contact {
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(to bottom right, #a992da, #62c2cc);   /*#8b5eea, #62c2cc);*/
+}
+
+.contact form {
+  background-color: transparent;
+}
+
+.contact form label,
+.contact form input,
+.contact form textarea {
+  color: #000000;
+}
+
+.contact form input,
+.contact form textarea {
+  background-color: #cec5df;
+}
+
+html, body {
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+.portal-knapp {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #FFF;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.portal-knapp:hover {
+  background-color: #0056B3;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.register-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-left: 60px;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+}
+
+/* Rest of the existing CSS code */
+
+.input-label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+  
+}
+
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.submit-button {     /* Logg inn knappen */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+}
+
+input[type="submit"] {
+  background-color: rgb(102, 74, 182);
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: darkblue;
+}
+
+
+
+
+hr {
+  border: none;
+  border-top: 10px solid #000000;
+  width: 100%;
+  margin:  20px 0;
+
+}
+
+
+.form-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Legg til denne linjen for å lage litt plass mellom input felt og logg inn */
+}
+
+
+.not-registered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.not-registered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Legg til denne linjen for å midtstille horisontalt */
+  align-items: center; /* Legg til denne linjen for å midtstille vertikalt */
+}
+
+
+.register-box {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; /* Legg til denne linjen for å flytte boksen lenger ned */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

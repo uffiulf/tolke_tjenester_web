@@ -1,9 +1,9 @@
+const path = require('path');
 const express = require('express');
 const app = express();
 
-app.use(express.static('public', {
-  extensions: ['html', 'htm', 'js', 'jsx']
-}));
+const publicPath = path.join(__dirname, 'public');
+app.use(express.static(publicPath));
 
 const port = 3000;
 
