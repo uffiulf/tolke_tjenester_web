@@ -1,17 +1,16 @@
-import React from 'react';
-import '../css/style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function OmOss() {
   return (
     <div>
       <header>
-        <nav>
+      <nav>
           <ul>
-            <li><a href="/public/index.html">Hjem</a></li>
-            <li><a href="/public/tjenester/Tjenester.html">Tjenester</a></li>
-            <li><a href="/public/om-oss.html">Om Oss</a></li>
-            <li><a href="/public/kontakt.html">Kontakt</a></li>
+            <li><Link to="/">Hjem</Link></li>
+            <li><Link to="/tjenester">Tjenester</Link></li>
+            <li><Link to="/om-oss">Om Oss</Link></li>
+            <li><Link to="/kontakt">Kontakt</Link></li>
           </ul>
         </nav>
         <h1>Tolk Margrit AS</h1>
@@ -41,7 +40,6 @@ function OmOss() {
       <footer>
         <p>&copy; Tolk Margrit AS 2023</p>
       </footer>
-      <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </div>
   );
 }

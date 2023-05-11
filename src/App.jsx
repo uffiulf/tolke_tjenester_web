@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// Importer dine komponenter her (erstatt "MinSide" med riktig komponentnavn)
-import Hjem from 'F:\Webserver og docker\tolke_tjenester_web\src\index.jsx';
+import Hjem from './Hjem';
 import Tjenester from './Tjenester';
 import OmOss from './OmOss';
 import Kontakt from './Kontakt';

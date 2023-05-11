@@ -1,0 +1,24 @@
+/* calendar.css */
+.tui-full-calendar {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+  }
+  
+  .tui-full-calendar-popup-date {
+    font-weight: bold;
+  }
+  
+  .tui-full-calendar-weekday-schedule {
+    overflow: visible !important;
+  }
+  
+  .tui-full-calendar-more-schedules {
+    font-size: 11px;
+    cursor: pointer;
+  }
+  
+  #calendar {
+    width: 100%;
+    height: 800px;
+  }
+  

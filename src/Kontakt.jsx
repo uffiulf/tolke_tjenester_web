@@ -1,4 +1,5 @@
-
+import { Link } from "react-router-dom";
+import React from "react";
 
 function Kontakt() {
   return (
@@ -10,22 +11,14 @@ function Kontakt() {
           rel="stylesheet"
         />
         <div className="header-container">
-          <nav>
-            <ul>
-              <li>
-                <a href="index.html">Hjem</a>
-              </li>
-              <li>
-                <a href="/public/tjenester/Tjenester.html">Tjenester</a>
-              </li>
-              <li>
-                <a href="om-oss.html">Om Oss</a>
-              </li>
-              <li>
-                <a href="kontakt.html">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
+        <nav>
+          <ul>
+            <li><Link to="/">Hjem</Link></li>
+            <li><Link to="/tjenester">Tjenester</Link></li>
+            <li><Link to="/om-oss">Om Oss</Link></li>
+            <li><Link to="/kontakt">Kontakt</Link></li>
+          </ul>
+        </nav>
         </div>
         <h1>Tolk Margrit AS</h1>
       </header>

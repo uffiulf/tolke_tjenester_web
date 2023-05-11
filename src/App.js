@@ -1,27 +1,25 @@
-// src/App.js
-
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import MyCalendar from './MyCalendar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Importer dine komponenter her (erstatt "MinSide" med riktig komponentnavn)
-import Hjem from 'F:\Webserver og docker\tolke_tjenester_web\src\index.jsx';
+import Hjem from './Hjem';
 import Tjenester from './Tjenester';
-import OmOss from './Om-oss';
+import OmOss from './om-oss';
 import Kontakt from './Kontakt';
 import Bestill from './Bestill';
+import Portal from "./Portal";
+
 
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Hjem} />
-        <Route path="/tjenester" component={Tjenester} />
-        <Route path="/om-oss" component={OmOss} />
-        <Route path="/kontakt" component={Kontakt} />
-        <Route path="/bestill" component={Bestill} />
-      </Switch>
-      <MyCalendar />
+      <Routes>
+        <Route path="/" element={<Hjem />} />
+        <Route path="/tjenester" element={<Tjenester />} />
+        <Route path="/om-oss" element={<OmOss />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/bestill" element={<Bestill />} />
+        <Route path="/portal" element={<Portal />} />
+      </Routes>
     </Router>
   );
 };
